@@ -66,19 +66,28 @@ h3{
     .my-profile >img{
         height: 600px;
         width: 300px;
+        
         border-end-start-radius: 200px;
         border-end-end-radius: 200px;
         border-start-end-radius: 200px;
         border-start-start-radius: 200px;
+        
+
         transition: 0.5s;
     }
     .my-profile{
         padding: 20px;
         border: 1px solid black;
+        /*
         border-end-start-radius: 200px;
         border-end-end-radius: 200px;
         border-start-end-radius: 200px;
         border-start-start-radius: 200px;
+        */
+        border-top-right-radius: 200px;
+        border-top-left-radius: 200px;
+        border-bottom-right-radius: 200px;
+        border-bottom-left-radius: 200px;
     }
     .my-profile >img:hover{
         height: 620px;
