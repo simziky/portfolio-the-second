@@ -221,6 +221,9 @@ h3{
         flex-direction: column;
        
     }
+    .image-gal span img{
+        width: 300px;
+    }
 
 }
 
