@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.sec1{
+    width: 30%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    order: 1;
+}
+.sec2{
+    width: 40%;
+    background-color: rgb(253, 255, 127);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    order: 2;
+}
+.sec3{
+    width: 30%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    order: 3;
+}
+li{
+    list-style: none;
+}
+a{
+    color: black;
+}
+a:hover{
+    color: rgb(149, 151, 4);
+}
+h3{
+    color: rgb(216, 210, 210);
+}
+/*START OF SECTION 1 */
+#landing-page{
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sec1-inner{
+    width: 300px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: -300px;
+    z-index: 10;
+    padding: 10px;
+    
+}
+/*END OF SECTION 1*/
+
+/*START OF IMAGE SECTION*/
+
+    .my-profile >img{
+        height: 600px;
+        width: 300px;
+        border-end-start-radius: 200px;
+        border-end-end-radius: 200px;
+        border-start-end-radius: 200px;
+        border-start-start-radius: 200px;
+        transition: 0.5s;
+    }
+    .my-profile{
+        padding: 20px;
+        border: 1px solid black;
+        border-end-start-radius: 200px;
+        border-end-end-radius: 200px;
+        border-start-end-radius: 200px;
+        border-start-start-radius: 200px;
+    }
+    .my-profile >img:hover{
+        height: 620px;
+        width: 320px;
+    }
+    .my-profile:hover{
+        border: 1px solid red;
+    }
+
+/*START OF IMAGE SECTION*/
+
+
+/*START OF THIRD SECTION*/
+.sec3-inner{
+    width: 300px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left:-300px;
+    z-index: 10;
+    height: 450px;
+    padding: 10px;
+}
+
+
+/*START OF THIRD SECTION*/
+
+
+#gallery{
+    padding-top: 50px;
+    height: auto;
+    background-color:black ;
+    text-align: center;
+}#gallery h1{
+    color: antiquewhite;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+
+.image-gal{
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;flex-wrap: wrap;
+    align-items: center;
+    
+}
+
+.image-gal span img{
+    height: 400px;
+    border-radius: 20px;
+    
+}
+
+.image-gal span{
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid white;
+}
+#up{
+    display: none;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: #eee;
+   z-index: 99;
+    bottom: 20px;
+    cursor: pointer;
+    color: aqua;
+    border-radius: 50%;
+    right: 30px;
+   
+}
+
+#up i{
+      color: #16162d;
+      font-size: 2rem;
+      margin: auto;
+}
+
+@media screen and (max-width:1300px) {
+
+    .sec1-inner{
+       
+        margin-right: -100px;
+       
+    }
+
+    .sec3-inner{
+    
+        margin-left:-100px;
+       
+    }
+   
+}
+
+@media screen and (max-width:900px){
+    .sec1-inner{
+       
+        margin-right: 10px;
+     
+    }
+
+    .sec3-inner{
+    
+        margin-left:10px;
+       
+    }
+    .sec1{
+        display: grid;
+        justify-content: center;
+        background-color: black;
+        order: 2;
+        width: 100%;
+    }
+
+    .sec3{
+        display: grid;
+        justify-content: center;
+        background-color: black;
+        order: 3;
+        width: 100%;
+    }
+
+    .sec2{
+        padding-top: 30px;
+        width: 100%;
+       
+        order: 1;
+    }
+
+    #landing-page{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+       
+    }
+
+}
+
+/*
+#landing-page{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+   
+}
+.sec2{
+    order: 1;
+}
+.sec1{
+    order: 2;
+}
+.sec3{
+    order: 3;
+}
